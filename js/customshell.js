@@ -97,8 +97,8 @@ function GetCorrectDateFormat(callback) {
     output = output + date.getFullYear();
 
     // Adds the IP Address of the connector
-    APICaller("http://www.geoplugin.net/json.gp", res => {
-        output = output + " from " + res.geoplugin_request;
+    APICaller("https://ipapi.co/json/", res => {
+        output = output + " from " + res.ip;
         callback(output);
     });
 }
