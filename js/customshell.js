@@ -204,9 +204,9 @@ var Directory = "";
 
 function FindProjects(callback) {
     if (Directory == "") {
-        callback("/GitHub");
-    } else if (Directory == "GitHub") {
-        GetListOfGithubProjects(res => {
+        callback("/GitLab");
+    } else if (Directory == "GitLab") {
+        GetListOfGitlabProjects(res => {
             callback(res);
         });
     }
@@ -214,13 +214,13 @@ function FindProjects(callback) {
 
 function GotoProject(ref) {
     if (Directory == "") {
-        if (ref == "GitHub") {
-            Directory = "GitHub";
+        if (ref == "GitLab") {
+            Directory = "GitLab";
         } else {
             Directory = "";
         }
-    } else if (Directory == "GitHub") {
-        SendSomeoneToAGithubProject(ref);
+    } else if (Directory == "GitLab") {
+        SendSomeoneToAGitlabProject(ref);
     }
 }
 
@@ -258,22 +258,24 @@ function APICaller (api_url, callback) {
 // Github API Functions
 var GithubCallCache;
 
-APICaller("https://api.github.com/users/DannyZolp/repos", res => {
+APICaller("https://gitlab.zolp.dev/api/v4/projects", res => {
     GithubCallCache = res;
 })
 
-function GetListOfGithubProjects(callback) {
+function GetListOfGitlabProjects(callback) {
     var output = "";
         GithubCallCache.forEach(ref => {
-            output = output + "/" + ref.name + "   ";
+            if (ref.visability != "private") {
+                output = output + "/" + ref.name + "   ";
+            }
         });
         callback(output);
 }
 
-function SendSomeoneToAGithubProject(selection) {
+function SendSomeoneToAGitlabProject(selection) {
         GithubCallCache.forEach(ref => {
             if (ref.name == selection) {
-                window.open(ref.html_url);
+                window.open("https://gitlab.zolp.dev/" + ref.path_with_namespace);
             }
         });
 }
