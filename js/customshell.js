@@ -40,9 +40,9 @@ terminal.onData(ref => {
 
 function FixPrompt(callback) {
     if (Directory == "") {
-        callback(promptText = "\r\nuser@very-real-machine-not-an-emulator:~$ ");
+        callback(promptText = "\r\nuser@ubuntu000:~$ ");
     } else {
-        callback(promptText = `\r\nuser@very-real-machine-not-an-emulator/${Directory}/:~$ `);
+        callback(promptText = `\r\nuser@ubuntu000/${Directory}/:~$ `);
     }
 }
 
@@ -60,8 +60,8 @@ function CreateStartingText(terminal) {
     // Just a whole bunch of code that makes it look pretty, don't care enough to make this look nice ;)
     terminal.writeln("Welcome to DannyOS 69.42.0 LTS (GNU/Linux 5.3.0-1020 x86_64)");
     terminal.writeln(" ");
-    terminal.writeln(" * Documentation:  https://github.zolp.dev");
-    terminal.writeln(" * Management:     https://zolp.dev/project/website")
+    terminal.writeln(" * Documentation:  https://zolp.dev/github");
+    terminal.writeln(" * Management:     https://github.com/DannyZolp/DannyZolp.com-Website")
     terminal.writeln(" * Support:        danny@zolp.dev");
     terminal.writeln(" ");
     terminal.writeln(`For a list of commands, type "help" (or "howtouse" if you are really stuck)`)
