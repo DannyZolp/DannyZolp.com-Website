@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faTwitter, faLinkedin, faDiscord, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faDiscord, faMedium } from '@fortawesome/free-brands-svg-icons';
 import './Homepage.css';
 
 const GetRandomTagline = () => {
