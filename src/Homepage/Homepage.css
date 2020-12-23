@@ -1,5 +1,5 @@
 /* Imported CSS and Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@1,200&display=swap');
 
 /* Containers and other arrangement types */
 .container {
@@ -19,7 +19,7 @@
 
 /* Font Styles */
 .title {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   margin: 0;
 }
@@ -28,20 +28,20 @@ h1 {
   margin: 1;
   font-size: 96px;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h2 {
   margin: 1;
   font-size: 36px;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
   font-size: 14px;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a.media-button {
@@ -51,11 +51,15 @@ a.media-button {
   padding: 16px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   border-radius: 8px;
   font-size: 16px;
   transition-duration: 0.4s;
   margin: 10px;
+  height: 32px;
+  width: 32px;
+  justify-content: center;
+  align-items: center;
 
   -webkit-appearance: button;
   -moz-appearance: button;
