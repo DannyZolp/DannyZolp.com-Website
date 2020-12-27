@@ -8,7 +8,7 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import './Homepage.css';
-import clubpenguin from '../static/clubpenguin.gif';
+// import clubpenguin from '../static/clubpenguin.gif';
 
 const GetRandomTagline = () => {
   const responses = [
@@ -68,13 +68,13 @@ export const Homepage = () => {
             >
               <FontAwesomeIcon icon={faEnvelope} size="2x" />
             </a>
-            <a
+            {/* <a
               href="https://play.dannyzolp.com/"
               className="media-button"
               data-testid="ClubPenguin"
             >
               <img src={clubpenguin} height="32px" alt="club penguin" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
