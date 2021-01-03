@@ -69,7 +69,7 @@ export const Homepage = () => {
               <FontAwesomeIcon icon={faEnvelope} size="2x" />
             </a>
             <a
-              href="http://bonzibuddy.org/download.html"
+              href="https://zolp.dev/downloadmoreram"
               className="media-button"
               data-testid="DownloadMoreRam"
             >
