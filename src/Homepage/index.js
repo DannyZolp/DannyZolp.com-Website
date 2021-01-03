@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMemory } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faTwitter,
@@ -67,6 +67,13 @@ export const Homepage = () => {
               data-testid="Email"
             >
               <FontAwesomeIcon icon={faEnvelope} size="2x" />
+            </a>
+            <a
+              href="http://bonzibuddy.org/download.html"
+              className="media-button"
+              data-testid="DownloadMoreRam"
+            >
+              <FontAwesomeIcon icon={faMemory} size="2x" />
             </a>
             {/* <a
               href="https://play.dannyzolp.com/"
