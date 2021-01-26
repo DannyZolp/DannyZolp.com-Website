@@ -23,7 +23,15 @@ const GetRandomTagline = () => {
   return responses[Math.floor(Math.random() * responses.length)];
 };
 
+
+
 export const Homepage = () => {
+  const [yearDisplay, setYearDisplay] = useState("");
+  
+    const date = new Date();
+    const year = date.getFullYear();
+    setYearDisplay(year);
+
   return (
     <div>
       <div className="Homepage">
@@ -86,7 +94,7 @@ export const Homepage = () => {
         </div>
       </div>
       <div className="footer">
-        <p>Made with love by Danny Zolp, Copyright 2020</p>
+        <p>Made with love by Danny Zolp, Copyright {yearDisplay}</p>
       </div>
     </div>
   );
