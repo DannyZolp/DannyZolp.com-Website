@@ -1,0 +1,32 @@
+// tagline code
+var ar = [
+  "DannaDannaD",
+  "Beep Boop",
+  "What is your mother's maiden name?",
+  "Zip Zap Zoobidy Dap",
+  "What's Popping",
+  "I don't understand",
+  "Pretty Cool",
+  "Wow I never thought I would update these MOTDs",
+  "My Credit Card Number is <a href='https://zolp.dev/downloadmoreram'>here</a>",
+  "My Bitcoin Wallet is <a href='https://zolp.dev/downloadmoreram'>here</a>",
+  "Send all investments to my email",
+  "What is love?",
+  "I will NEVER run out of ideas for this!",
+  "Blue + Dog = 47?",
+  "Minny Man better give me an A",
+  "You can reload this page to see new things",
+  "Tab spacing should always be 2 spaces",
+  "Okay I'm running out of ideas",
+  "Buffalo",
+  "Microsoft Surfaces are overpriced",
+  "Hogans Heros?",
+  "Huh?",
+  "gamer",
+  "ploZ ynnaD",
+  "yarn > npm",
+  "adobe flash",
+  "super",
+];
+document.getElementById("tagline").innerHTML =
+  ar[Math.floor(Math.random() * ar.length)];
